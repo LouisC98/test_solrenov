@@ -1,0 +1,53 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+SOLRENOV17 - À propos
+{% endblock title %}
+
+{% block body %}
+<div class="app-content">
+    {% include "partials/_img-header.html.twig" with {'title' : 'À propos de nous'} %}
+    <div class="container my-5 presentation">
+        <h4 class="fw-bold mb-2">PRÉSENTATION</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia adipisci pariatur molestias animi
+            explicabo? Magnam iste at, dolor quis exercitationem saepe accusamus id voluptate? Exercitationem nesciunt
+            nam atque totam illum illo, odio maiores consectetur, debitis ea optio dolores eaque ducimus numquam
+            perspiciatis, vero tempore ipsa! Nostrum vero, ratione deserunt est magnam sunt eos, fugiat quo, nobis quam
+            ipsam! Ducimus quis reprehenderit quas consequatur minima delectus, dolore corporis commodi, modi sapiente
+            officiis suscipit dicta? Facilis, eveniet possimus voluptates, quisquam eius itaque cupiditate error animi
+            tempora tenetur consequuntur distinctio accusantium sapiente dolor, mollitia vel explicabo modi natus
+            asperiores maxime adipisci nihil! Numquam?</p>
+    </div>
+    <h3 class="fw-bold">NOS SERVICES</h3>
+    <div class="separator">
+        <i class="bi bi-dash-lg"></i><i class="bi bi-tools"></i><i class="bi bi-dash-lg"></i>
+    </div>
+    <div class="service-container">
+        <div class="service-container-item dark-grey">
+            <h3>CHAPES FLUIDES ET ISOLATION DE SOLS</h3>
+            <p>Conçues pour la mise à niveau des sols, afin d'obtenir une planéité et une horizontalité parfaite, avant
+                la pose du revêtement. Dans le neuf et la rénovation.</p>
+        </div>
+        <div class="service-container-item light-grey">
+            <h3>REVETEMENTS DE SOLS ET MURS</h3>
+            <p>Fourniture et pose de carrelage, parquet et sols souples</p>
+        </div>
+        <div class="service-container-item dark-grey">
+            <h3>RENOVATION DE SALLES DE BAIN</h3>
+            <p>Remise en état ou modernisation de salles de bain existantes</p>
+        </div>
+        <div class="service-container-item light-grey">
+            <h3>TERRASSES</h3>
+            <p>Espaces extérieurs, dalles sur plot ou carrelage...</p>
+        </div>
+        <div class="service-container-item dark-grey">
+            <h3>CONSTRUCTIONS NEUVES</h3>
+            <p>Prise en charge complète des lots chapes et carrelage</p>
+        </div>
+        <div class="service-container-item light-grey">
+            <h3>LOCAUX TECHNIQUES</h3>
+            <p>Cuisines professionnelles, SPAs, surfaces de ventes...</p>
+        </div>
+    </div>
+</div>
+{% endblock body %}

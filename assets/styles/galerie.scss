@@ -1,0 +1,16 @@
+.select-categories {
+    button {
+        margin: .5rem;
+        padding: .3rem .5rem;
+        color: grey;
+        border: solid 1px grey;
+        background-color: $white;
+        letter-spacing: .1rem;
+
+        &:hover {
+            color: $bg-dark;
+            border-color: $bg-dark;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SOLRENOV 17 - Acceuil{% endblock %}
+
+{% block body %}
+<div class="app-content">
+    {% include "partials/_img-header.html.twig" with { 'title' : "Votre partenaire rénovation"} %}
+    <div class="container home-container">
+        <h3><span>//</span> SOLRENOV17</h3>
+        <p>
+            <span>VOTRE PARTENAIRE SOLS ET SALLES DE BAINS</span>
+            <br>
+            Que ce soit dans la rénovation ou la construction neuve, nous assurons la pose de revêtements de sol et la
+            remise en état ou création complète de salles de bain. Nous pouvons répondre à vos besoins de sols, murs,
+            douches à l'Italiennes, cuisines techniques, hammams, piscines...
+        </p>
+        <div class="icon-container">
+            <div class="icon-item">
+                <div class="icon">
+                    <i class="bi bi-lightbulb"></i>
+                </div>
+                <p class="icon-text">SAVOIR-FAIRE</p>
+            </div>
+            <div class="icon-item">
+                <div class="icon">
+                    <i class="bi bi-gem"></i>
+                </div>
+                <p class="icon-text">QUALITÉ MATÉRIAUX</p>
+            </div>
+            <div class="icon-item">
+                <div class="icon">
+                    <i class="bi bi-magic"></i>
+                </div>
+                <p class="icon-text">RÉACTIVITÉ</p>
+            </div>
+        </div>
+    </div>
+    <div class="project-container">
+        <h3>NOS PROJETS</h3>
+        <div class="separator">
+            <i class="bi bi-dash-lg"></i><i class="bi bi-tools"></i><i class="bi bi-dash-lg"></i>
+        </div>
+        <div class="home-gallery">
+    
+            <img src="{{ asset('build/images/parquet/parquet_9.jpg') }}" alt="parquet">
+    
+            <img src="{{ asset('build/images/dalle_bolon/dalle_bolon_5.jpg') }}" alt="bolon">
+            <img src="{{ asset('build/images/revetement_pvc/revetement_pvc_6.jpg') }}" alt="pvc">
+            <img src="{{ asset('build/images/marche_pvc/marche_pvc_4.jpg') }}" alt="marche">
+            <img src="{{ asset('build/images/flotex/flotex_9.jpg') }}" alt="flotex">
+            <img src="{{ asset('build/images/moquette/moquette_8.jpg') }}" alt="moquette">
+            <img src="{{ asset('build/images/parquet/parquet_6.jpg') }}" alt="parquet">
+            <img src="{{ asset('build/images/flotex/flotex_10.jpg') }}" alt="flotex">
+        </div>
+    </div>
+    <div class="container choose-container">
+        <h3>POURQUOI NOUS CHOISIR</h3>
+        <div class="separator">
+            <i class="bi bi-dash-lg"></i><i class="bi bi-tools"></i><i class="bi bi-dash-lg"></i>
+        </div>
+        <div class="choose-content">
+            <div class="choose-content-text">
+                <p>
+                    <span>ESTHÉTIQUE, FONCTIONNEL & DURABLE</span>
+                    <br>
+                    Votre projet se doit d’être à votre goût, il doit aussi se révéler efficace dans la vie quotidienne
+                    (accessibilité, facilité d’entretien…).
+                    Par ailleurs, sa tenue dans le temps est notre axe de réflexion majeur lors de la recherche d’une
+                    solution
+                    technique ou d’un matériau à mettre en oeuvre.
+                    Nous sommes à votre disposition pour vous conseiller afin de vous apporter des solutions d’ordre
+                    techniques,
+                    esthétiques et pérennes.
+                </p>
+            </div>
+            <img src="{{ asset('build/images/parquet/parquet_3.jpg') }}" alt="parquet">
+            <div class="icon-container">
+                <div class="icon-item">
+                    <div class="icon">
+                        <i class="bi bi-gem"></i>
+                    </div>
+                    <p class="icon-text">
+                        <span>QUALITÉ MATÉRIAUX</span>
+                        <br>
+                        Matériaux de qualité, répondant aux normes du secteur, sous avis techniques
+                    </p>
+                </div>
+                <div class="icon-item">
+                    <div class="icon">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <p class="icon-text">
+                        <span>RÉACTIVITÉ</span>
+                        <br>
+                        Équipe dynamique et disponible, délais respectés
+                    </p>
+                </div>
+                <div class="icon-item">
+                    <div class="icon">
+                        <i class="bi bi-magic"></i>
+                    </div>
+                    <p class="icon-text">
+                        <span>ADAPTATION</span>
+                        <br>
+                        Votre projet évolue ? Nous faisons notre maximum pour mener votre projet à
+                        bien
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

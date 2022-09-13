@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block body %}
+<div class="app-content">
+    <div class="dashboard-container">
+        <div class="container mt-4 d-flex justify-content-center">
+            <a class="search-btn" href="{{path('app_photo_search')}}">Rechercher par catégorie <i class="bi bi-search"></i></a>
+        </div>
+        <div class="container my-5 photos-container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2">
+                {% for photo in photos %}
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top" src="{{asset('uploads/')}}{{photo.name}}" alt="">
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    <span>Nom </span>: {{photo.name}}
+                                </li>
+                                <li>
+                                    <span>Catégorie </span>: {{photo.category.name}}
+                                </li>
+                                <li>
+                                    <span>Date </span>: {{ photo.uploadedAt ? photo.uploadedAt|date('Y-m-d H:i:s') : ''
+                                    }}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer d-flex justify-content-end">
+                            {{ include('photo/_delete_form.html.twig') }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+
+{# <a href="{{ path('app_photo_edit', {'id': photo.id}) }}">edit</a>
+<a href="{{ path('app_photo_show', {'id': photo.id}) }}">show</a>
+<img src="{{asset('build/uploads/')}}{{photo.name}}" class="image-dash" alt="">
+<td>{{ photo.uploadedAt ? photo.uploadedAt|date('Y-m-d H:i:s') : '' }}</td> #}

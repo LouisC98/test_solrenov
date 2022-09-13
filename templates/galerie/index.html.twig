@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SOLRENOV 17 - Galerie{% endblock %}
+
+{% block body %}
+<div class="app-content" id="search">
+    {% include "partials/_img-header.html.twig" with {'title': 'Notre galerie'} %}
+    <div class="container my-4 select-categories d-flex justify-content-center flex-wrap">
+        <button v-for="category in categories" @click="searchByCategories(category.id)">${category.name}$</button>
+        <button @click="findAll">TOUS</button>
+    </div>
+    <div class="mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-around" >
+            <div v-for="photo in photos" class="col p-0">
+                <img class="img-fluid" v-bind:src="'{{asset('uploads/')}}'+ photo.name" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+{{ parent() }}
+{{ encore_entry_script_tags('search') }}
+
+{% endblock javascripts %}

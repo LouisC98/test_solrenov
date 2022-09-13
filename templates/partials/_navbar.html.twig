@@ -1,0 +1,49 @@
+<header>
+    <nav>
+        <div class="logo">
+            <a href="{{path('home')}}">
+                <img src="{{ asset('build/images/logo.jpg') }}" alt="logo">
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a class="{% if app.request.pathinfo==path('home') %} active {% endif %}"
+                    href="{{ path('home') }}">Acceuil</a>
+            </li>
+            <li>
+                <a class="{% if app.request.pathinfo==path('galerie') %} active {% endif %}"
+                    href="{{ path('galerie') }}">Galerie</a>
+            </li>
+            <li>
+                <a class="{% if app.request.pathinfo==path('about') %} active {% endif %}" href="{{ path('about') }}">À
+                    propos</a>
+            </li>
+            <li>
+                <a class="{% if app.request.pathinfo==path('contact') %} active {% endif %}"
+                    href="{{ path('contact') }}">Contact</a>
+            </li>
+            </ul>
+        <div class="burger"><i class="bi bi-list"></i></div>
+    </nav>
+
+    <div class="menu hidden">
+        <ul>
+            <li>
+                <a class=" {% if app.request.pathinfo==path('home') %} active {% endif %}" href="{{ path('home') }}">Acceuil</a>
+            </li>
+            <li>
+                <a class=" {% if app.request.pathinfo==path('galerie') %} active {% endif %}"
+                    href="{{ path('galerie') }}">Galerie</a>
+            </li>
+            <li>
+                <a class=" {% if app.request.pathinfo==path('about') %} active {% endif %}" href="{{ path('about') }}">À
+                    propos</a>
+            </li>
+            <li>
+                <a class="{% if app.request.pathinfo==path('contact') %} active {% endif %}" href="{{ path('contact') }}">
+                    Contact
+                </a>
+            </li>
+            </ul>
+            </div>
+</header>

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listes des catégories{% endblock %}
+
+{% block body %}
+<div class="app-content">
+    <div class="container my-5">
+        <h1>Liste des catégories</h1>
+        <div class="container d-flex justify-content-center m-3 category">
+            <ul class="list-group w-75">
+                {% for category in categories %}
+                    <li class="list-group-item d-flex justify-content-between">
+                        <h5>{{category.name}}</h5>
+                        <a href="{{ path('app_category_edit', {'id': category.id}) }}">Modifier<i class="bi bi-pencil"></i></a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+    </div>
+</div>
+    
+{% endblock %}
+{# <a href="{{ path('app_category_show', {'id': category.id}) }}">show</a> #}
+                        {# <a href="{{ path('app_category_edit', {'id': category.id}) }}">Modifier</a> #}

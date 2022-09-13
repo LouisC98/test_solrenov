@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+$bg-dark: #1F1E24;
+$white: rgb(246, 246, 246);
+$orange: #F54F37;
+
+* {
+    font-family: 'Lato';
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body {
+        background-color: $white;
+}
+
+.app-content {
+    min-height: 90vh;
+}
+
+li {
+    list-style: none;
+}
+
+
+

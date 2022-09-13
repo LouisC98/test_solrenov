@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% apply inline_css %}
+    <style>
+        html {
+            font-family: 'Open sans', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background-color: #1F1E24;
+            display: flex;
+            justify-content: space-between;
+        }
+        header img {
+            max-width: 300px;
+        }
+        h2 {
+            color: orangered;
+        }
+        h2 span {
+            color: grey;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
+    {% endapply %}
+
+</head>
+
+<body>
+    <header>
+        <img src="{{ email.image('@images/logo.jpg') }}" alt="logo">
+    </header>
+    <div class="container">
+        <h2>Vous avec reçu un message de : <span>{{name}}</span></h2>
+        <h3>({{userEmail}})</h3>
+        
+        <hr>
+        <p>{{message}}</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelles photos{% endblock %}
+
+{% block body %}
+<div class="app-content">
+    <div class="container my-5 upload-img">
+        <h1>Mettre des photos en ligne</h1>
+    
+        {{ include('photo/_form.html.twig') }}
+    
+    </div>
+</div>
+{% endblock %}

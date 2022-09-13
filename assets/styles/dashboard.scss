@@ -1,0 +1,327 @@
+.menu-dashboard {
+    background-color: $bg-dark;
+
+    .admin-home-btn {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+
+        span {
+            color: $orange;
+        }
+    }
+
+    .admin-menu {
+        a {
+            margin: .5rem;
+            color: $white;
+            text-decoration: none;
+            padding: .3rem .5rem;
+            background-color: $orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2rem;
+
+            &:hover {
+                background-color: $white;
+                color: $orange;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+
+    .logout {
+        a {
+            color: $orange;
+            text-decoration: none;
+            border: solid 1px $orange;
+            padding: .3rem .5rem;
+            background-color: $white;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $orange;
+                color: $white;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}
+
+.search-btn {
+    text-decoration: none;
+    color: $orange;
+    padding: .3rem .5rem;
+    border: solid 1px $orange;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+
+    i {
+        margin-left: .3rem;
+    }
+
+    &:hover {
+        transition: .5s ease-in-out;
+        color: $white;
+        background-color: $orange;
+        font-weight: bold;
+    }
+}
+
+.photos-container {
+
+    .card {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: .5rem 0;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        button {
+            border: 2px solid $orange;
+            border-radius: 5px;
+            color: $orange;
+            font-weight: bold;
+            letter-spacing: .1rem;
+
+            &:hover {
+                color: $white;
+                background-color: $orange;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}
+
+// Page Login
+.login {
+    input {
+        border: solid 1px $orange;
+    }
+
+    button {
+        color: $orange;
+        background-color: $white;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        border: solid 1px $orange;
+
+        &:hover {
+            color: $white;
+            background-color: $orange;
+            transition: .5s ease-in-out;
+        }
+    }
+}
+
+// Page register
+.register {
+    div {
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        label {
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+            border-radius: 5px;
+            border: solid 1px $orange;
+            padding: .5rem;
+        }
+    }
+
+    button {
+        color: $orange;
+        background-color: $white;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        border: solid 1px $orange;
+
+        &:hover {
+            color: $white;
+            background-color: $orange;
+            transition: .5s ease-in-out;
+        }
+    }
+}
+
+//Upload Page 
+.upload-img {
+    form {
+        div {
+            display: flex;
+            flex-wrap: wrap;
+
+            div {
+                width: 100%;
+                margin-bottom: 1rem;
+
+                label {
+                    width: 100%;
+                    font-weight: bold;
+                    margin-bottom: .2rem;
+                }
+
+                select {
+                    padding: .5rem;
+                    border: solid 1px $orange;
+                }
+            }
+        }
+
+        button {
+            color: $orange;
+            background-color: $white;
+            font-weight: bold;
+            letter-spacing: .1rem;
+            border: solid 1px $orange;
+
+            &:hover {
+                color: $white;
+                background-color: $orange;
+                transition: .5s ease-in-out;
+            }
+        }
+
+        a {
+            padding: .5rem;
+            color: $orange;
+        }
+    }
+}
+
+// Page index categorie
+.category {
+    ul {
+        li {
+            a {
+                color: $orange;
+
+                i {
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+}
+
+
+//page new category
+.new-category {
+    width: 50%;
+
+    form {
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            div {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                label {
+                    width: 100%;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    margin: .5rem;
+                }
+
+                input {
+                    width: 100%;
+                    padding: .5rem;
+                    border: solid 1px $orange;
+                    border-radius: 10px;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            button {
+                color: $orange;
+                background-color: $white;
+                font-weight: bold;
+                letter-spacing: .1rem;
+                border: solid 1px $orange;
+                margin: 0 .5rem;
+
+                &:hover {
+                    color: $white;
+                    background-color: $orange;
+                    transition: .5s ease-in-out;
+                }
+            }
+
+            a {
+                padding: .5rem;
+                color: $orange;
+            }
+        }
+
+        .delete-btn {
+            color: red;
+            padding: .4rem .5rem;
+            border: solid 1px red;
+            background-color: $white;
+            border-radius: 5px;
+            letter-spacing: .1rem;
+            font-weight: bold;
+
+            &:hover {
+                background-color: red;
+                color: $white;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}
+
+.search-form {
+    form {
+        display: flex;
+        align-items: center;
+
+        label {
+            font-size: 1.2rem;
+            margin-right: .5rem;
+        }
+
+        select {
+            padding: .3rem .5rem;
+            margin-right: .5rem;
+        }
+
+        button {
+            padding: .3rem .5rem;
+            border: solid 1px $orange;
+            border-radius: 10px;
+            color: $orange;
+            background-color: $white;
+
+            i {
+                margin-left: .2rem;
+            }
+
+            &:hover {
+                color: $white;
+                background-color: $orange;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}

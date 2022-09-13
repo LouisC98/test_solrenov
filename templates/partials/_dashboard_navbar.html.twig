@@ -1,0 +1,14 @@
+<div class="menu-dashboard d-flex justify-content-between flex-wrap p-1 align-items-center">
+    <a href="{{path('app_photo_index')}}" class="admin-home-btn">
+        <h1 class="fw-bold fst-italic"><span>//</span> Admin Dashboard</h1>
+    </a>
+    <div class="d-flex justify-content-center admin-menu">
+        <a href="{{path('app_photo_index')}}">Photos</a>
+        <a href="{{path('app_category_index')}}">Catégories</a>
+        <a href="{{path('app_photo_new')}}">+ <i class="bi bi-image"></i></a>
+        <a href="{{path('app_category_new')}}">+ <i class="bi bi-tags"></i></a>
+    </div>
+    <div class="logout d-flex justify-content-center">
+        <a href="{{path('app_logout')}}">Se déconnecter</a>
+    </div>
+</div>

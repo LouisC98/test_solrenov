@@ -1,0 +1,8 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <div class="d-flex justify-content-center align-items-center">
+        <button class="btn">{{ button_label|default('Enregistrer') }}
+            <i class="bi bi-sd-card"></i></button>
+        <a href="{{ path('app_category_index') }}">Retour</a>
+    </div>
+{{ form_end(form) }}
